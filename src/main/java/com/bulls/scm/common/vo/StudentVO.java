@@ -3,6 +3,8 @@ package com.bulls.scm.common.vo;
 import java.math.BigDecimal;
 import java.util.Date;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 public class StudentVO {
 
 	private int academicYear;
@@ -15,6 +17,7 @@ public class StudentVO {
 
 	private int caste;
 
+	@JsonFormat(shape=JsonFormat.Shape.STRING, pattern="dd-MM-yyyy")
 	private Date dob;
 
 	private String dualMode;
