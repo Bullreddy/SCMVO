@@ -3,11 +3,14 @@ package com.bulls.scm.common.vo;
 import java.math.BigDecimal;
 import java.util.Date;
 
+import com.bulls.scm.vo.ClassificationVO;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
 public class StudentVO {
 
-	private int academicYear;
+	private int academicYearID;
+	
+	private ClassificationVO academicYear;
 
 	private Date admissionDate;
 
@@ -15,7 +18,9 @@ public class StudentVO {
 
 	private BigDecimal alternateMobileNo;
 
-	private int caste;
+	private int casteID;
+	
+	private ClassificationVO caste;
 
 	@JsonFormat(shape=JsonFormat.Shape.STRING, pattern="dd-MM-yyyy")
 	private Date dob;
@@ -40,7 +45,9 @@ public class StudentVO {
 
 	private String name;
 
-	private int phase;
+	private int phaseID;
+	
+    private ClassificationVO phase;
 
 	private String photoSbmtd;
 
@@ -52,20 +59,24 @@ public class StudentVO {
 
 	private String shift;
 
-	private int trade;
+	private int tradeID;
 
-	private int type;
+	private int typeID;
 
+    private ClassificationVO trade;
+    
+    private ClassificationVO type;
+    
 	private String UID_Number;
 
 	private String unit;
 
-	public int getAcademicYear() {
-		return academicYear;
+	public int getAcademicYearID() {
+		return academicYearID;
 	}
 
-	public void setAcademicYear(int academicYear) {
-		this.academicYear = academicYear;
+	public void setAcademicYearID(int academicYearID) {
+		this.academicYearID = academicYearID;
 	}
 
 	public Date getAdmissionDate() {
@@ -92,12 +103,12 @@ public class StudentVO {
 		this.alternateMobileNo = alternateMobileNo;
 	}
 
-	public int getCaste() {
-		return caste;
+	public int getCasteID() {
+		return casteID;
 	}
 
-	public void setCaste(int caste) {
-		this.caste = caste;
+	public void setCasteID(int casteID) {
+		this.casteID = casteID;
 	}
 
 	public Date getDob() {
@@ -188,12 +199,12 @@ public class StudentVO {
 		this.name = name;
 	}
 
-	public int getPhase() {
-		return phase;
+	public int getPhaseID() {
+		return phaseID;
 	}
 
-	public void setPhase(int phase) {
-		this.phase = phase;
+	public void setPhaseID(int phaseID) {
+		this.phaseID = phaseID;
 	}
 
 	public String getPhotoSbmtd() {
@@ -236,20 +247,20 @@ public class StudentVO {
 		this.shift = shift;
 	}
 
-	public int getTrade() {
-		return trade;
+	public int getTradeID() {
+		return tradeID;
 	}
 
-	public void setTrade(int trade) {
-		this.trade = trade;
+	public void setTradeID(int tradeID) {
+		this.tradeID = tradeID;
 	}
 
-	public int getType() {
-		return type;
+	public int getTypeID() {
+		return typeID;
 	}
 
-	public void setType(int type) {
-		this.type = type;
+	public void setTypeID(int typeID) {
+		this.typeID = typeID;
 	}
 
 	public String getUID_Number() {
@@ -267,7 +278,45 @@ public class StudentVO {
 	public void setUnit(String unit) {
 		this.unit = unit;
 	}
-	
-	
+
+	public ClassificationVO getAcademicYear() {
+		return academicYear;
+	}
+
+	public void setAcademicYear(ClassificationVO academicYear) {
+		this.academicYear = academicYear;
+	}
+
+	public ClassificationVO getCaste() {
+		return caste;
+	}
+
+	public void setCaste(ClassificationVO caste) {
+		this.caste = caste;
+	}
+
+	public ClassificationVO getPhase() {
+		return phase;
+	}
+
+	public void setPhase(ClassificationVO phase) {
+		this.phase = phase;
+	}
+
+	public ClassificationVO getTrade() {
+		return trade;
+	}
+
+	public void setTrade(ClassificationVO trade) {
+		this.trade = trade;
+	}
+
+	public ClassificationVO getType() {
+		return type;
+	}
+
+	public void setType(ClassificationVO type) {
+		this.type = type;
+	}
 	
 }
