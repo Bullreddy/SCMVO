@@ -17,6 +17,8 @@ public class GetClassificationRequestVO {
 	}*/
 	
 	private List<ClassificationType> types;
+	
+	private String scholarshipType;
 
 	public List<ClassificationType> getTypes() {
 		return types;
@@ -25,6 +27,13 @@ public class GetClassificationRequestVO {
 	public void setTypes(List<ClassificationType> types) {
 		this.types = types;
 	}
-	
+
+	public String getScholarshipType() {
+		return scholarshipType;
+	}
+
+	public void setScholarshipType(String scholarshipType) {
+		this.scholarshipType = scholarshipType;
+	}
 	
 }
