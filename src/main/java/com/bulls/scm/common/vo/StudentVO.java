@@ -5,6 +5,7 @@ import java.util.Date;
 
 import com.bulls.scm.vo.ClassificationVO;
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class StudentVO {
 
@@ -36,7 +37,8 @@ public class StudentVO {
 	private String highestQualification;
 
 	private int id;
-
+ 
+ private String category;
 	private String identificationMarks;
 
 	private BigDecimal mobileNo;
@@ -48,6 +50,16 @@ public class StudentVO {
 	private int phaseID;
 	
     private ClassificationVO phase;
+
+	
+
+	public String getCategory() {
+		return category;
+	}
+
+	public void setCategory(String category) {
+		this.category = category;
+	}
 
 	private String photoSbmtd;
 
@@ -222,8 +234,8 @@ public class StudentVO {
 	public void setPresentAddress(String presentAddress) {
 		this.presentAddress = presentAddress;
 	}
-
-	public String getRegistrationNo() {
+   @JsonProperty("regNo")
+  	public String getRegistrationNo() {
 		return registrationNo;
 	}
 
@@ -263,6 +275,7 @@ public class StudentVO {
 		this.typeID = typeID;
 	}
 
+	   @JsonProperty("aadharNo")
 	public String getUID_Number() {
 		return UID_Number;
 	}
