@@ -19,6 +19,8 @@ public class GetClassificationRequestVO {
 	private List<ClassificationType> types;
 	
 	private String scholarshipType;
+	
+	private String branchID;
 
 	public List<ClassificationType> getTypes() {
 		return types;
@@ -35,5 +37,15 @@ public class GetClassificationRequestVO {
 	public void setScholarshipType(String scholarshipType) {
 		this.scholarshipType = scholarshipType;
 	}
+
+	public String getBranchID() {
+		return branchID;
+	}
+
+	public void setBranchID(String branchID) {
+		this.branchID = branchID;
+	}
+	
+	
 	
 }

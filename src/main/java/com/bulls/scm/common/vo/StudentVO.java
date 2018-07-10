@@ -2,6 +2,7 @@ package com.bulls.scm.common.vo;
 
 import java.math.BigDecimal;
 import java.util.Date;
+import java.util.List;
 
 import com.bulls.scm.vo.ClassificationVO;
 import com.fasterxml.jackson.annotation.JsonFormat;
@@ -82,6 +83,8 @@ public class StudentVO {
 	private String UID_Number;
 
 	private String unit;
+	
+	private List certificateIds;
 
 	public int getAcademicYearID() {
 		return academicYearID;
@@ -330,6 +333,14 @@ public class StudentVO {
 
 	public void setType(ClassificationVO type) {
 		this.type = type;
+	}
+
+	public List getCertificateIds() {
+		return certificateIds;
+	}
+
+	public void setCertificateIds(List certificateIds) {
+		this.certificateIds = certificateIds;
 	}
 	
 }
