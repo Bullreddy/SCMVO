@@ -39,7 +39,8 @@ public class StudentVO {
 
 	private int id;
  
- private String category;
+	private String category;
+	
 	private String identificationMarks;
 
 	private BigDecimal mobileNo;
