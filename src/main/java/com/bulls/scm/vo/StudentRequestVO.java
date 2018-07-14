@@ -12,7 +12,7 @@ public class StudentRequestVO {
 	
 	private String branchID;
 	
-	private List<String> students;
+	private List students;
 
 	public String getPhaseID() {
 		return phaseID;
@@ -46,11 +46,11 @@ public class StudentRequestVO {
 		this.branchID = branchID;
 	}
 
-	public List<String> getStudents() {
+	public List getStudents() {
 		return students;
 	}
 
-	public void setStudents(List<String> students) {
+	public void setStudents(List students) {
 		this.students = students;
 	}
 	
