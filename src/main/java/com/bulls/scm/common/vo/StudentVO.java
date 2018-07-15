@@ -86,8 +86,6 @@ public class StudentVO {
 	private String unit;
 	
 	private List certificateIds;
-	
-	private boolean photoSubmitted;
 
 	public int getAcademicYearID() {
 		return academicYearID;
@@ -344,14 +342,6 @@ public class StudentVO {
 
 	public void setCertificateIds(List certificateIds) {
 		this.certificateIds = certificateIds;
-	}
-
-	public boolean isphotoSubmitted() {
-		return photoSubmitted;
-	}
-
-	public void setPhotoSubmitted(boolean photoSubmitted) {
-		this.photoSubmitted = photoSubmitted;
 	}
 	
 }
