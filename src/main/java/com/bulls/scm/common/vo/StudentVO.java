@@ -88,6 +88,8 @@ public class StudentVO {
 	private List certificateIds;
 	
 	private boolean photoSubmitted;
+	
+	private ClassificationVO yearId;
 
 	public int getAcademicYearID() {
 		return academicYearID;
@@ -346,12 +348,22 @@ public class StudentVO {
 		this.certificateIds = certificateIds;
 	}
 
-	public boolean isphotoSubmitted() {
-		return photoSubmitted;
-	}
+	
 
 	public void setPhotoSubmitted(boolean photoSubmitted) {
 		this.photoSubmitted = photoSubmitted;
+	}
+
+	public ClassificationVO getYearId() {
+		return yearId;
+	}
+
+	public void setYearId(ClassificationVO yearId) {
+		this.yearId = yearId;
+	}
+
+	public boolean isPhotoSubmitted() {
+		return photoSubmitted;
 	}
 	
 }
