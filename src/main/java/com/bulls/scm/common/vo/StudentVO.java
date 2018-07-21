@@ -52,6 +52,8 @@ public class StudentVO {
 	private int phaseID;
 	
     private ClassificationVO phase;
+    
+    private List<FeeDetailVO> feeDetailsVO;
 
 	
 
@@ -364,6 +366,14 @@ public class StudentVO {
 
 	public boolean isPhotoSubmitted() {
 		return photoSubmitted;
+	}
+
+	public List<FeeDetailVO> getFeeDetailsVO() {
+		return feeDetailsVO;
+	}
+
+	public void setFeeDetailsVO(List<FeeDetailVO> feeDetailsVO) {
+		this.feeDetailsVO = feeDetailsVO;
 	}
 	
 }
