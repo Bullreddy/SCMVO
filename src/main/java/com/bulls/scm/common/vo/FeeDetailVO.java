@@ -2,12 +2,13 @@ package com.bulls.scm.common.vo;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.util.Date;
 
 public class FeeDetailVO {
 
 	private String studentId;
 	private String studentName;
-	private LocalDateTime collectedDate;
+	private Date collectedDate;
 	private String collectedBy;
 	private BigDecimal amount;
 	private String feeYear;
@@ -20,11 +21,11 @@ public class FeeDetailVO {
 		this.studentId = studentId;
 	}
 
-	public LocalDateTime getCollectedDate() {
+	public Date getCollectedDate() {
 		return collectedDate;
 	}
 
-	public void setCollectedDate(LocalDateTime collectedDate) {
+	public void setCollectedDate(Date collectedDate) {
 		this.collectedDate = collectedDate;
 	}
 
